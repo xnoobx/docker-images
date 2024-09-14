@@ -36,4 +36,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
-           skopeo copy docker://docker.io/chainguard/kubernetes-dashboard:latest docker://crpi-engorh9wkxohdoy1.cn-shanghai.personal.cr.aliyuncs.com/my-k8s-test/kubernetes-dashboard:latest
+           skopeo copy docker://docker.io/cloudforet/dashboard:2.0.dev65 docker://crpi-engorh9wkxohdoy1.cn-shanghai.personal.cr.aliyuncs.com/my-k8s-test/dashboard:2.0.dev65
