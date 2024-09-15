@@ -36,4 +36,13 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
-           skopeo copy docker://docker.io/registry:2 docker://crpi-engorh9wkxohdoy1.cn-shanghai.personal.cr.aliyuncs.com/my-k8s-test/registry:2
+           skopeo copy docker://docker.io/flannel/flannel:v0.25.6 docker://crpi-engorh9wkxohdoy1.cn-shanghai.personal.cr.aliyuncs.com/my-k8s-test/flannel:v0.25.6
+           skopeo copy docker://docker.io/mysql:5.7 docker://crpi-engorh9wkxohdoy1.cn-shanghai.personal.cr.aliyuncs.com/my-k8s-test/mysql:5.7
+           skopeo copy docker://docker.io/centos:centos7.5.1804 docker://crpi-engorh9wkxohdoy1.cn-shanghai.personal.cr.aliyuncs.com/my-k8s-test/centos:centos7.5.1804
+           skopeo copy docker://docker.io/elasticsearch:7.4.2 docker://crpi-engorh9wkxohdoy1.cn-shanghai.personal.cr.aliyuncs.com/my-k8s-test/elasticsearch:7.4.2
+           skopeo copy docker://docker.io/quay.io/fluentd_elasticsearch/fluentd:v2.5.2 docker://crpi-engorh9wkxohdoy1.cn-shanghai.personal.cr.aliyuncs.com/my-k8s-test/fluentd-es-root:v1.6.2-1.0
+
+
+
+
+           
